@@ -12,12 +12,16 @@ public class Paciente {
         this.estado = estado;
     }
 
-    String consultar(Paciente paciente){
+    String consultar(){
         return estado.consultar(this);
     };
 
     String internar(){
         return estado.internar(this);
+    };
+
+    String dispensar(){
+        return estado.dispensar(this);
     };
 
     String transferirNecroterio(){
